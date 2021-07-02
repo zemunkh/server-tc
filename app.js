@@ -168,11 +168,12 @@ app.use('/', router);
 const db = require('./app/config/db.config.js');
 
 // force
-db.sequelize.sync({force: true}).then(() => {
+db.sequelize.sync({force: false}).then(() => {
     console.log('Drop and Resync with { force: true }');
 });
 
 require('./app/route/customer.route.js')(app);
+require('./app/route/timelog.route.js')(app);
 
 // demo route
 app.get('/', (req, res) => {

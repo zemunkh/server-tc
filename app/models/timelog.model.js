@@ -5,14 +5,17 @@ module.exports = (sequelize, Sequelize) => {
         customerId: {
             type: Sequelize.STRING,
         },
+        customerName: {
+            type: Sequelize.STRING,
+        },
         entryTime: {
             type: Sequelize.DATE,
         },
         exitTime: {
             type: Sequelize.DATE,
         },
-        hallNumber: {
-            type: Sequelize.STRING,
+        roomId: {
+            type: Sequelize.INTEGER,
         },
         lockerNumber: {
             type: Sequelize.STRING,

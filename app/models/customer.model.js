@@ -2,7 +2,7 @@ const { sequelize } = require("../config/db.config");
 
 module.exports = (sequelize, Sequelize) => {
     const Customer = sequelize.define('customer', {
-        customerId: {
+        passportId: {
             type: Sequelize.STRING,
             unique: true,
         },
@@ -14,6 +14,21 @@ module.exports = (sequelize, Sequelize) => {
         },
         gender: {
             type: Sequelize.STRING
+        },
+        courtTime: {
+            type: Sequelize.INTEGER
+        },
+        poolTime: {
+            type: Sequelize.INTEGER
+        },
+        fitnessTime: {
+            type: Sequelize.INTEGER
+        },
+        aeroTime: {
+            type: Sequelize.INTEGER
+        },
+        subTime: {
+            type: Sequelize.INTEGER
         },
         email: {
             type: Sequelize.STRING

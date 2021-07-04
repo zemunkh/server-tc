@@ -14,9 +14,9 @@ const env = {
 
 const env_production = {
     database: 'sportcomplex',
-    username: 'admin',
-    password: 'Muugii!23',
-    host: '10.1.3.49',
+    username: 'root',
+    password: 'Local99#',
+    host: '10.1.3.71',
     dialect: 'mysql',
     pool: {
         max: 5,
